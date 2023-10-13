@@ -55,7 +55,7 @@ export const ChatInput = ({
       });
 
       await axios.post(url, values);
-
+      console.log("hi")
       form.reset();
       router.refresh();
     } catch (error) {
