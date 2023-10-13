@@ -56,7 +56,7 @@ const MemberIdPage = async ({
         <div className="bg-white dark:bg-[#313338] flex flex-col h-full">
             <ChatHeader 
                 imageUrl={otherMember.profile.imageUrl}
-                name={otherMember.profile.name}
+                name={otherMember.profile.firstName}
                 serverId={params.serverId}
                 type="conversation"
             />
@@ -71,7 +71,7 @@ const MemberIdPage = async ({
                 <>
                     <ChatMessages 
                         member={currentMember}
-                        name={otherMember.profile.name}
+                        name={otherMember.profile.firstName}
                         chatId={conversation.id}
                         type="conversation"
                         apiUrl="/api/direct-messages"
@@ -83,7 +83,7 @@ const MemberIdPage = async ({
                         }}
                     />
                     <ChatInput 
-                        name={otherMember.profile.name}
+                        name={otherMember.profile.firstName}
                         type="conversation"
                         apiUrl="/api/socket/direct-messages"
                         query={{
