@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 
-const HomePage = async () => {
+const HomePage = () => {
     const router = useRouter();
 
     const onClick = () => {
